@@ -5,6 +5,11 @@ app.get('/',(req,res)=>{
     res.status(200).send({message: 'Olá mundo estou funcionando!'});
 })
 
+app.get('/ola',(req,res)=>{
+    res.status(200).send({message: 'Olá, eu sou a rota olá!'});
+})
+
+
 app.listen(3001,()=>{
     console.log('Api rodando na porta 3001');
 })
